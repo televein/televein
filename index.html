@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TeleVein</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="icon" href="./images/image.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <script src="./js/main.js"></script>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="51">
+    <!-- navibar start -->
+    <header class="header" >
+            <h1 class="m-0 display-5"><span class="text-primary">Tele</span>Vein</h1>
+        <div class="fas fa-bars"></div>
+        <nav class="navbar">
+            <ul>
+                <li><a  href="#home" class="nav-item nav-link active">Home</a></li> 
+                <li><a href="#about" class="nav-item nav-link">About</a></li> 
+                <li><a href="#service" class="nav-item nav-link">Services</a></li> 
+                <li><a href="#project" class="nav-item nav-link">Project</a></li> 
+                <li><a href="#clients" class="nav-item nav-link">Clients</a></li> 
+                <li><a href="#team" class="nav-item nav-link">Team</a></li> 
+                <li><a href="#contact" class="nav-item nav-link">Contact</a></li>  
+                <li><a onclick="document.getElementById('login').style.display='block',logclick()" class=" nav-item nav-link" >Log in</a></li>
+            </ul>
+            
+        </nav>
+    </header>
+    <!-- navibar end -->
+<!-- login start -->
+  
+<div id="login" class="modal1">
+  
+    <form class="modal-content animate" action="/action_page.php" method="post">
+      <div class="imgcontainer">
+        <span onclick="document.getElementById('login').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <!-- <img src="img_avatar2.png" alt="Avatar" class="avatar"> -->
+      </div>
+  
+      <div class="container">
+        <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" required>
+  
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+          
+        <button type="submit">Login</button>
+        <label>
+          <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+      </div>
+      <div class="container" style="background-color:#f1f1f1">
+        <button type="button" onclick="document.getElementById('login').style.display='none'" class="logbtn">Log in</button>
+      </div>
+      <div class="container" style="background-color:#f1f1f1">
+        <button type="button" onclick="document.getElementById('login').style.display='none'" class="cancelbtn">Cancel</button>
+        <button  onclick="document.getElementById('signup').style.display='block',document.getElementById('login').style.display='none'" class="signupbtn">Sign Up</button></div>
+        <span class="psw">Forgot <a href="#">password?</a></span>
+      </div>
+    </form>
+  </div>
+<!-- login end -->
+<!-- sign up start -->
+
+
+<div id="signup" class="modal2">
+  <span onclick="document.getElementById('signup').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content" action="/action_page.php">
+    <div class="container">
+      <h1>Sign Up</h1>
+      <p>Please fill in this form to create an account.</p>
+      <hr>
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <label for="psw-repeat"><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+      
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+
+      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('signup').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="submit" class="signupbtn">Sign Up</button>
+      </div>
+    </div>
+  </form>
+</div>
+<!-- sign up end -->
+    <!-- home start -->
+  <section id="home" class="home">
+      <h1>Bring your Business Online</h1>
+      <h2>with IT Company Services</h2>
+    <div class="wave wave1"></div>
+    <div class="wave wave2"></div>
+    <div class="wave wave3"></div>
+  </section>
+  
+  <section id="about" class="about">
+    <div class="container-fluid py-5" >
+    <br> <div class="position-relative d-flex align-items-center justify-content-center">
+            <h1 class="display text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">About</h1>
+            <h1 class="display-5 position-absolute text-uppercase text-primary">About Me</h1>
+        </div>
+      </div>
+  </section>
+  <!-- home end -->
+  <!-- about start -->
+  <section id="about" class="about" >
+    <div class="row">
+        <div class="content">
+           <div class="smallabout"> <h3>Fueling success through innovation in the digital age</h3>
+            <p>We're on a mission to transform businesses through technology. With a focus on innovation and expertise, we propel companies into the digital age. Our solutions empower you to thrive in today's tech-driven world,making us your trusted partner for success.</p>
+           </div>
+
+
+    <span id="dots">
+            
+    </span> 
+    <span id="more">
+       <div class="more"><p> In the rapidly evolving landscape of business and technology, our mission remains unwavering: to drive transformation and empower companies for success. With a keen focus on innovation and a deep well of expertise, we are committed to propelling businesses into the digital age and beyond.</p>
+       <h3>Innovation That Ignites Change</h3>
+        <p>Our journey begins with a passion for innovation. We believe that embracing cutting-edge technology is the key to staying competitive in today's dynamic marketplace. It's not just about keeping up with the times; it's about setting new standards and leading the way. 
+        
+            From responsive web design that captivates your audience to e-commerce solutions that streamline your sales process, our team of experts harnesses the power of technology to elevate your business. We don't just create websites; we craft digital experiences that leave a lasting impression.</p>
+        <h3>Expertise That Defines Excellence</h3>
+        <P>
+            What sets us apart is our unwavering commitment to expertise. Our team comprises seasoned professionals who excel in their respective fields. We bring together a wealth of knowledge, from web development and design to digital marketing and SEO strategies.
+        
+            When you partner with us, you're not just hiring a service; you're gaining a dedicated team of experts who are passionate about your success. We take the time to understand your unique needs, industry challenges, and goals. This personalized approach ensures that every solution we deliver is tailor-made to suit your business perfectly.
+           
+        </P>
+        <h3>Thriving in a Tech-Driven World</h3>
+        <p>Today, success hinges on your ability to navigate the tech-driven world effectively. The pace of technological change is astounding, and we're here to guide you through it. Our solutions are designed to empower you, giving you the tools and insights needed to thrive.
+        
+            We understand that each business is unique, and there's no one-size-fits-all solution. That's why we work closely with you to develop strategies that align with your vision. Whether you're a startup aiming to make your mark or an established corporation seeking a digital overhaul, we've got you covered.
+            </p>
+        <h3>Your Trusted Partner for Success</h3>
+        <p>At the heart of our mission is the desire to be your trusted partner. We measure our success by your success, and our commitment doesn't end with project delivery. We're with you every step of the way, ensuring that your digital presence continues to evolve and adapt to changing trends and technologies.
+        
+            In a world where technology shapes the future, we're here to shape your future. Partner with us, and together, we'll navigate the exciting and ever-changing landscape of business and technology. Your journey to success begins here.
+            
+            As your company embraces the digital age, we're honored to be your chosen ally on this transformative path. Let's write the future together.</p>   
+        </div> 
+        </span>
+    <button onclick="myFunction()" class="btn" id="myBtn">Read More</button>
+</div>
+</div>
+
+</section>
+<!-- about end -->
+<!-- service start -->
+
+  <section id="service" class="about">
+    <div class="container-fluid py-5" >
+    <br> <div class="position-relative d-flex align-items-center justify-content-center">
+            <h1 class="display text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Services</h1>
+            <h1 class="display-5 position-absolute text-uppercase text-primary">Our Services</h1>
+        </div>
+      </div>
+  </section>
+  <section class="space">
+      <div class="row">
+        <div class="section-head col-sm-12" ><br><br>
+          <p>We help you to build high-quality digital solutions and products as well as deliver a wide range of related professional services. We are providing world-class service to our clients.
+            </p>
+        </div>
+       <a  class="col-lg-4 col-sm-6" href="/qr code maker/index.html" style="text-decoration: none;">
+        <div class="item"><img src="/images/qrcode.png" style="width: 150px;height: 150px;" > 
+            <!-- <div class="item"> <span class="icon feature_box_col_one"><i class="fa fa-laptop"></i></span> -->
+            
+                <br><h6 style="line-height: 50px;">Website Qrcode Genrator</h6>
+            <p>Elevate your website experience with our integrated QR code generator! Streamline access to vital information by creating QR codes for your services effortlessly. </p>
+          </div>
+        </a>
+        <div class="col-lg-4 col-sm-6" >
+          <div class="item"> <span class="icon feature_box_col_two"><i class="fa fa-android"></i></span>
+            <h6>Mobile App Development</h6>
+            <p>We Have Expertise In Creating Multi-Platform Mobile App Solutions For Both Android And IOS Devices. Using PhoneGap, Xamarin, And React Native, We Offer Custom Mobile App That Runs Smoothly On Multiple Platforms.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="item"> <span class="icon feature_box_col_three"><i class="fa fa-magic"></i></span>
+            <h6>Digital Marketing</h6>
+            <p>The digital marketing services that we provide have their own set of charms. By taking our digital marketing services, our clients will be able to increase visibility and engage with their customers at the online platform.</p>
+          </div>
+    </div>
+</section>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+<!-- service end -->
+  <section class="counters">
+    <div class="container">
+        <!-- <div>
+            <i class="far fa-clock fa-4x"></i>
+            <div class="counter" data-target="13500">0</div>
+            <h3>Working Hours</h3>
+        </div>
+        <div>
+            <i class="fas fa-gift fa-4x"></i>
+            <div class="counter" data-target="720">0</div>
+            <h3>Completed Projects</h3>
+        </div>
+        <div>
+            <i class="fas fa-users fa-4x"></i>
+            <div class="counter" data-target="480">0</div>
+            <h3>Happy Clients</h3>
+        </div>
+        <div>
+            <i class="fas fa-award fa-4x"></i>
+            <div class="counter" data-target="120">0</div>
+            <h3>Awards Received</h3>
+        </div> -->
+    </div>
+</section>
+<!-- project start -->
+<section id="project" class="about">
+    <div class="container-fluid py-5" >
+    <br> <div class="position-relative d-flex align-items-center justify-content-center">
+            <h1 class="display text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Porject</h1>
+            <h1 class="display-5 position-absolute text-uppercase text-primary">Our Project</h1>
+        </div>
+      </div>
+</section>
+<section>
+      <div class="row">
+        <div class="section-head-1 col-sm-12" style="text-align: center;">
+          
+          <p>The objective of IT Company is to enable a large number of youth to take up industry-relevant skill training that will help them in securing a better livelihood.
+            </p>
+        </div>
+        
+        <a  class="col-lg-4 col-sm-6" href="/homepage/indexh.html" style="text-decoration: none;">
+            <div class="item"><img src="/images/TELEVEIN chat bot.png" style="width: 150px;height: 150px;" > 
+                <!-- <div class="item"> <span class="icon feature_box_col_one"><i class="fa fa-laptop"></i></span> -->
+                
+                    <!-- <br><h6 style="line-height: 50px;">Website Qrcode Genrator</h6> -->
+                <p>I am clarifying the doubts of the 12th student who are going to achieve their goals </p>
+              </div>
+            </a>
+        
+        <div class="col-lg-4 col-sm-6">
+          <div class="item"> <span class="icon feature_box_col_five"><i class="fa fa-upload"></i></span>
+            <h6>Project-2</h6>
+            <!-- <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor Aenean massa.<br><br><br></p> -->
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="item"> <span class="icon feature_box_col_six"><i class="fa fa-camera"></i></span>
+            <h6>Project-3</h6>
+            <!-- <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor Aenean massa.<br><br><br></p> -->
+          </div>
+        </div>
+      </div>
+</section>
+<!-- project end -->
+
+<div class="communicate">
+    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <a href="#contact"><button class="btn">Contact Now</button></a>
+</div>
+<!-- 
+<div class="testimonials mt-100">
+    <div class="container">
+        <div class="section-header" style="text-align: center;">
+            <h2 style="margin-top: -15rem;">Testimonials</h2>
+            <p style="font-size: 2rem;">
+                See what people have to say about us
+            </p>
+        </div>
+
+        <div class="owl-carousel testimonials-carousel">
+            <div class="testimonial-item row align-items-center">
+                <div class="testimonial-img">
+                    <img src="./images/testimonial-1.jpg" alt="Testimonial image">
+                </div>
+                <div class="testimonial-text">
+                    <h3>Person-1</h3>
+                    <h4>Designation</h4>
+                    <p>
+                        Testimonial
+
+                    </p>
+                </div>
+            </div>
+            <div class="testimonial-item row align-items-center">
+                <div class="testimonial-img">
+                    <img src="./images/testimonial-2.jpg" alt="Testimonial image">
+                </div>
+                <div class="testimonial-text">
+                    <h3>Person-2</h3>
+                    <h4>Designation</h4>
+                    <p>
+                        Testimonial
+
+                    </p>
+                </div>
+            </div>
+            <div class="testimonial-item row align-items-center">
+                <div class="testimonial-img">
+                    <img src="./images/testimonial-3.jpg" alt="Testimonial image">
+                </div>
+                <div class="testimonial-text">
+                    <h3>Person-3</h3>
+                    <h4>Designation</h4>
+                    <p>
+                        Testimonial
+
+                    </p>
+                </div>
+            </div>
+            <div class="testimonial-item row align-items-center">
+                <div class="testimonial-img">
+                    <img src="./images/testimonial-4.jpg" alt="Testimonial image">
+                </div>
+                <div class="testimonial-text">
+                    <h3>Person-4</h3>
+                    <h4>Designation</h4>
+                    <p>
+                        Testimonial
+
+                    </p>
+                </div>
+            </div>
+            <div class="testimonial-item row align-items-center">
+                <div class="testimonial-img">
+                    <img src="./images/testimonial-5.jpg" alt="Testimonial image">
+                </div>
+                <div class="testimonial-text">
+                    <h3>Person-5</h3>
+                    <h4>Designation</h4>
+                    <p>
+                        Testimonial
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
+<!-- client start -->
+<section id="clients" class="about">
+    <div class="container-fluid py-5" >
+    <br> <div class="position-relative d-flex align-items-center justify-content-center">
+            <h1 class="display text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Clients</h1>
+            <h1 class="display-5 position-absolute text-uppercase text-primary">Our Clients</h1>
+        </div>
+      </div>
+</section>
+<section>      
+<div class="clients mt-100">
+    <div class="container">
+        <div class="section-header">
+            <p>
+                We don't just build softwares, we build your business.
+            </p>
+        </div>
+        <div class="owl-carousel clients-carousel">
+            <img src="./images/image.png" alt="Client Logo">
+            <img src="./images/image.png" alt="Client Logo">
+            <img src="./images/image.png" alt="Client Logo">
+            <img src="./images/image.png" alt="Client Logo">
+            <img src="./images/image.png" alt="Client Logo">
+            <img src="./images/image.png" alt="Client Logo">
+            <img src="./images/image.png" alt="Client Logo">
+            <img src="./images/image.png" alt="Client Logo">
+        </div>
+    </div>
+</div>
+<a href="#" class="back-to-top"><i class="ion-ios-arrow-up"></i></a>
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="lib/jquery/jquery-migrate.min.js"></script>
+<script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="lib/easing/easing.min.js"></script>
+<script src="lib/waypoints/waypoints.min.js"></script>
+<script src="lib/counterup/counterup.min.js"></script>
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+<script src="lib/lightbox/js/lightbox.min.js"></script>
+<!-- client end -->
+
+<!-- team start -->
+<section id="team" class="about">
+    <div class="container-fluid py-5" >
+    <br> <div class="position-relative d-flex align-items-center justify-content-center">
+            <h1 class="display text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Team</h1>
+            <h1 class="display-5 position-absolute text-uppercase text-primary">Our Team</h1>
+        </div>
+      </div>
+</section>
+<section class="team" style="margin-top: 7rem;">
+  <div class="row">
+      <div class="card">
+          <div class="image">
+              <img src="./images/bharathan.jpg" alt="Team member 1">
+          </div>
+          <div class="info">
+              <h3>Bharathan</h3>
+              <span>Web Developer</span>
+              <div class="icons">
+                  <a href="https://www.facebook.com/bharathan.bharathan.58323431" class="fab fa-facebook-f"></a>
+                  <a href="https://twitter.com/BharathanRavic1/status/1700167105206014379?t=xUQf-khECmbuj5eK85Tbhw&s=19" class="fab fa-twitter"></a>
+                  <a href="https://www.instagram.com/bharathanravichandran/" class="fab fa-instagram"></a>
+                  <a href="https://www.linkedin.com/in/bharathan-ravichandran-9aa454226" class="fab fa-linkedin"></a>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="row">
+      <div class="card">
+          <div class="image">
+              <img src="./images/dinesh.jpg" alt="Team member 1">
+          </div>
+          <div class="info">
+              <h3>Dinesh</h3>
+              <span>Mobile Developer</span>
+              <div class="icons">
+                  <a href="https://www.facebook.com/profile.php?id=100024835640045" class="fab fa-facebook-f"></a>
+                  <a href="https://twitter.com/Dinesh638R/" class="fab fa-twitter"></a>
+                  <a href="https://instagram.com/_._dinesh_._._?igshid=ZGUzMzM3NWJiOQ==" class="fab fa-instagram"></a>
+                  <a href="https://www.linkedin.com/in/dinesh-s-58a6b3263" class="fab fa-linkedin"></a>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="row">
+      <div class="card">
+          <div class="image">
+              <img src="./images/gokul.jpg" alt="Team member 1">
+          </div>
+          <div class="info">
+              <h3>Gokula Kannan</h3>
+              <span>Graphic Designer</span>
+              <div class="icons">
+                  <a href="https://www.facebook.com/gokulakannan.v.3" class="fab fa-facebook-f"></a>
+                  <a href="https://twitter.com/GokulaKannanV04" class="fab fa-twitter"></a>
+                  <a href="https://www.instagram.com/gokulakannanv04/" class="fab fa-instagram"></a>
+                  <a href="https://www.linkedin.com/in/gokula-kannan-v/" class="fab fa-linkedin"></a>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="row">
+      <div class="card">
+          <div class="image">
+              <img src="./images/bharath.jpg" alt="Team member 1">
+          </div>
+          <div class="info">
+              <h3>Bharath Kumar</h3>
+              <span>Web Designer</span>
+              <div class="icons">
+                  <a href="https://www.facebook.com/profile.php?id=100075005269979&mibextid=ZbWKwL" class="fab fa-facebook-f"></a>
+                  <a href="https://x.com/5019_d?t=NGhsZWNynvca0UlSj_Lbxw&s=08 " class="fab fa-twitter"></a>
+                  <a href="https://instagram.com/d.bharathkumar_1412" class="fab fa-instagram"></a>
+                  <a href="https://www.linkedin.com/in/bharathkumar-duraisamy-4b5491230" class="fab fa-linkedin"></a>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+<!-- team end -->
+<!-- contact start -->
+
+<section id="contact" class="about">
+    <div class="container-fluid py-5" >
+    <br> <div class="position-relative d-flex align-items-center justify-content-center">
+            <h1 id="small" class="display text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Contact</h1>
+            <h1 class="display-5 position-absolute text-uppercase text-primary">Get in touch</h1>
+        </div>
+      </div>
+</section>
+<div class="contact-in">
+    <div class="contact-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30711243.17762776!2d64.4398422293091!3d20.011408266548177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30635ff06b92b791%3A0xd78c4fa1854213a6!2sIndia!5e0!3m2!1sen!2sin!4v1644684739958!5m2!1sen!2sin" width="100%" height="auto" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+    <div class="contact-form">
+        <form action="https://script.google.com/macros/s/AKfycbwd67PAzUKC7nTo5eC3LI-3E3mItmZX6U31NBU5x7Z-Um_aoDSp_-P7NU6vnivJTXsb/exec" method="POST">
+            <input type="text" name="name" placeholder="Name" class="contact-form-txt" required>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required placeholder="Contact number" maxlength="10" class="contact-form-phone">
+            <input type="email" name="email" placeholder="Email" class="contact-form-email" required>
+            <textarea placeholder="Your Message" name="message" class="contact-form-txtarea" required></textarea>
+            <input type="submit" value="Submit" name="submit" class="contact-form-btn">
+        </form>
+    </div>
+    </div>
+<!-- contact end -->
+<!-- 
+    <section class="faq">
+      <h1 class="heading" style="margin-top: -2rem; color: #00bfff;" id="faq">FAQ</h1>
+      <div class="row">
+          <div class="accordion-container">
+              <div class="accordion">
+                  <div class="accordion-header">
+                      <span>+</span>
+                      <h3>How much will it cost?</h3>
+                  </div>
+                  <div class="accordion-body">
+                      <p>To get a better idea of the cost of what you want to build, give us a quick phone call. We’ll ask you a few questions about the nature of the site, what sort of interactivity the site will have, your graphic design needs, etc. 
+                          Then we’ll be able to give you a ballpark figure. 
+                          If you’re still interested, we’ll come to your place of business and come up with a firm quote.</p>
+                  </div>
+              </div>
+              <div class="accordion">
+                  <div class="accordion-header">
+                      <span>+</span>
+                      <h3>How long it takes to design?</h3>
+                  </div>
+                  <div class="accordion-body">
+                      <p>The time limit of any assignment is normally dictated by the client. If you have any time limit in mind we will attempt to assemble it for you. 
+                          The main general delay in the making of a website is waiting for the content of the pages to be sent to us by the client.</p>
+                  </div>
+              </div>
+              <div class="accordion">
+                  <div class="accordion-header">
+                      <span>+</span>
+                      <h3>How do I associate with IT Company?</h3>
+                  </div>
+                  <div class="accordion-body">
+                      <p>The process begins when you contact us with your requirements. We analyze your requirements and respond to you. 
+                          On the basis of the further discussion, you can choose an engagement model that suits you the best. 
+                          After that, we begin the process of development.</p>
+                  </div>
+              </div>
+              <div class="accordion">
+                  <div class="accordion-header">
+                      <span>+</span>
+                      <h3>Can you help my current site look more professional?</h3>
+                  </div>
+                  <div class="accordion-body">
+                      <p>Yes. Give us your requirements and we have experienced expertise to help you give a 
+                          new professional look that really wonders!</p>
+                  </div>
+              </div>
+              <div class="accordion">
+                  <div class="accordion-header">
+                      <span>+</span>
+                      <h3>When do I pay?</h3>
+                  </div>
+                  <div class="accordion-body">
+                      <p>For most projects, equal payments are made at the start, midway, and the end of the project, but we can work with you to set up a schedule that meets your needs. 
+                          We understand that this is a big investment and want to help you budget for the expense in whatever way possible.
+                          We accept checks, PayPal, and all major credit cards.</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+    <div class="footer">
+      <div class="footer-top">
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-3 col-md-6 footer-links">
+                      <h4>About Us</h4>
+                      <ul>
+                          <li><i class="ion-ios-arrow-forward"></i> <a href="#">Home</a></li>
+                          <li><i class="ion-ios-arrow-forward"></i> <a href="#about">About us</a></li>
+                          <li><i class="ion-ios-arrow-forward"></i> <a href="#service">Our services</a></li>
+                          <li><i class="ion-ios-arrow-forward"></i> <a href="#">Terms & condition</a></li>
+                          <li><i class="ion-ios-arrow-forward"></i> <a href="#">Privacy policy</a></li>
+                      </ul>
+                  </div>
+
+                  <div class="col-lg-3 col-md-6 footer-links">
+                      <h4>Useful Links</h4>
+                      <ul>
+                          <li><i class="ion-ios-arrow-forward"></i> <a href="#portfolio">Portfolio</a></li>
+                          <li><i class="ion-ios-arrow-forward"></i> <a href="#team">Team</a></li>
+                          <li><i class="ion-ios-arrow-forward"></i> <a href="careers.html">Career</a></li>
+                          <li><i class="ion-ios-arrow-forward"></i> <a href="#contact">Contact</a></li>
+                          <li><i class="ion-ios-arrow-forward"></i> <a href="#faq">FAQ</a></li>
+                      </ul>
+                  </div>
+
+                  <div class="col-lg-3 col-md-6 footer-contact" style="font-size: 1.5rem;">
+                      <h4>Contact Us</h4>
+                      <p>
+                          1300  Center Avenue<br>
+                          Fresno, California<br>
+                          United States <br>
+                          <strong>Phone:</strong> +123-456-7890<br>
+                          <strong>Email:</strong> info@example.com<br>
+                      </p>
+
+                      <div class="social-links">
+                          <a href="https://www.facebook.com/"><i class="ion-logo-facebook"></i></a>
+                          <a href="https://twitter.com/login?lang=en"><i class="ion-logo-twitter"></i></a>
+                          <a href="https://www.linkedin.com/"><i class="ion-logo-linkedin"></i></a>
+                          <a href="https://www.instagram.com/"><i class="ion-logo-instagram"></i></a>
+                          <a href="https://accounts.google.com/servicelogin/signinchooser?flowName=GlifWebSignIn&flowEntry=ServiceLogin"><i class="ion-logo-googleplus"></i></a>
+                      </div>
+
+                  </div>
+
+                  <div class="col-lg-3 col-md-6 footer-newsletter">
+                      <h4>Subscription</h4>
+                      <p>With Our Skills Put Together, You Get An Ensemble Capable Of Doing Anything And Everything Your Brand Needs. Subscribe Here To Get Our Latest Updates.</p>
+                      <form action="" method="post">
+                          <input type="email" name="email"><input type="submit"  value="Subscribe">
+                      </form>
+                  </div>
+
+              </div>
+          </div>
+      </div>
+
+      <div class="container">
+          <div class="row align-items-center">
+              <div class="col-md-6 copyright" style="color: #fff; font-size: 1.3rem;">
+                  Copyright &copy; 2021 IT Company Website. All Rights Reserved.
+              </div>
+          </div>
+      </div>
+  </div> -->
+  
+    <!-- Footer Start -->
+    <div class="footer">
+    <div class="container-fluid bg-primary text-white mt-5 py-1 px-sm-1 px-md-5">
+        <div class="container text-center py-5">
+            <div class="d-flex justify-content-center mb-4">
+                <a class="btn btn-light btn-social mr-2" href="https://twitter.com/TeleVein"><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-light btn-social mr-2" href="https://www.facebook.com/profile.php?id=61550759655542"><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-light btn-social mr-2" href="https://www.linkedin.com/in/tele-vein-7a1799290/"><i class="fab fa-linkedin-in"></i></a>
+                <a class="btn btn-light btn-social" href="https://www.instagram.com/televein04/"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="d-flex justify-content-center mb-3">
+                <a class="text-white" href="#">Privacy</a>
+                <span class="px-3">|</span>
+                <a class="text-white" href="#">Terms</a>
+                <span class="px-3">|</span>
+                <a class="text-white" href="#">FAQs</a>
+                <span class="px-3">|</span>
+                <a class="text-white" href="#">Help</a>
+                <span class="px-3">|</span>
+                <a class="text-white" href="https://drive.google.com/file/d/1qgwDKc-1g-FBqSO5WZFtGU3Oh1YN1bBl/view?usp=sharing">License</a>
+
+            </div>
+            <p class="m-0">&copy; <a class="text-white font-weight-bold" href="#">TeleVein</a>. All Rights Reserved. Designed by <a class="text-white font-weight-bold" href="#">TeleVein</a>
+            </p>
+        </div>
+    </div>
+    </div>
+    <!-- Footer End -->
+
+
+  <a href="#" class="back-to-top"><i class="ion-ios-arrow-up"></i></a>
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "j4r8rg58lg");
+</script>
+</body>
+</html>

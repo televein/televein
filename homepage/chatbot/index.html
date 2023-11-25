@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/vsb.png"/>
+<body>
+    <div class="chatbot-container">
+      <audio id="audioPlayer" controls>
+        <source src="Click.mp3" type="audio/mpeg">
+    </audio>
+        
+        <div id="chatbot" >
+          
+            <div id="conversation">
+              <div id="header">
+                <h1><img class="head-img" src="images/vsb.png"/><strong id="vsb">VSB Chat Bot</strong>
+                  </h1>
+              </div>
+              <div class="chatbot-message">
+                
+                <p class="chatbot-text">Type Hi, to Start conversation...</p>
+              </div>
+            </div>
+        <!-- </div> -->
+            <form id="input-form">
+              <message-container>
+                <input id="input-field" type="text" placeholder="Type your message here" autocomplete="off">
+                <button id="submit-button" type="submit">
+                  <img class="send-icon" src="images/send-message.png" alt="send">
+                </button>
+              </message-container>
+                
+            </form>
+        </div>  
+
+    </div>
+    <script type="text/javascript">
+      (function(c,l,a,r,i,t,y){
+          c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+          t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+          y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+      })(window, document, "clarity", "script", "j4s0r0nzp7");
+  </script>
+    <script src="chatbot.js"></script>
+    <!-- <i class="fa fa-volume-mute"></i> -->
+</body>
+</html>
