@@ -628,12 +628,15 @@ hr {
   }   
 
 .counters {
+    text-align: center;
+    align-items: center;
 	background-image: url(../images/img2.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
 	color: #fff;
 	padding: 40px 20px;
+    
 }
 
 .counters .container {
