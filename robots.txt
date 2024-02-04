@@ -1,4 +1,5 @@
 User-agent: *
-Disallow: /search
+Allow: /sitemap.xml
+
 
 Sitemap: https://televein.netlify.app/sitemap.xml
