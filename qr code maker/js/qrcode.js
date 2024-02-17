@@ -5,7 +5,7 @@ function QrcodeGenerator(){
     var inputElement=document.getElementById('site_Url').value;
 
     const qrcode=new QRCode(qr,{
-        text:inputElement? inputElement:'https://televein.netlify.app',
+        text:inputElement? inputElement:'https://televein.in',
 
         width: 250,
         height: 250,
